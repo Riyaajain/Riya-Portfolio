@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Riya Jain | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-left">
+            <h1>Riya Jain</h1>
+            <p class="typing">Computer Science Engineer | AI Specialist | Full Stack Developer</p>
+
+            <div class="buttons">
+                <a href="https://www.linkedin.com/in/riya-jain-7345b524b/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Riyaajain" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <img src="profile.jpg" alt="Riya Jain">
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about reveal">
+        <h2>About Me</h2>
+        <p>
+            Detail-oriented Computer Science student specializing in Artificial Intelligence.
+            Experienced in building AI-driven applications, real-time systems, and scalable web platforms.
+            Passionate about Machine Learning, NLP, and solving impactful real-world problems.
+        </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="education reveal">
+        <h2>Education</h2>
+
+        <div class="edu-card">
+            <h3>BTech – Computer Science (AI Specialization)</h3>
+            <p>Shri Vaishnav Vidyapeeth Vishwavidyalaya</p>
+            <span>CGPA: 8.48 | 2026</span>
+        </div>
+
+        <div class="edu-card">
+            <h3>Senior Secondary</h3>
+            <p>St. Norbert School</p>
+            <span>68.98% | 2022</span>
+        </div>
+
+        <div class="edu-card">
+            <h3>Secondary</h3>
+            <p>St. Norbert School</p>
+            <span>72% | 2020</span>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills reveal">
+        <h2>Technical Skills</h2>
+        <div class="skill-grid">
+            <div class="card">C / C++</div>
+            <div class="card">Python</div>
+            <div class="card">HTML / CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Flask</div>
+            <div class="card">MySQL</div>
+            <div class="card">TensorFlow</div>
+            <div class="card">REST APIs</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <!-- PROJECTS -->
+<section class="projects reveal">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+        <h3>SpeakSphere – AI Driven Complaint Management System</h3>
+        <p>
+            Developed a peer-voting complaint platform with NLP-based sentiment tagging 
+            to automatically prioritize issues. Built an admin dashboard for tracking 
+            resolution and system insights.
+        </p>
+        <span class="tech">HTML | CSS | JavaScript | MySQL | Python (NLP)</span>
+    </div>
+
+    <div class="project-card">
+        <h3>Messenger – Real-Time Chat Application</h3>
+        <p>
+            Built a secure one-to-one messaging system with real-time delivery using 
+            socket programming. Designed RESTful APIs with Flask and implemented 
+            authentication for user security.
+        </p>
+        <span class="tech">Python | Flask | HTML | CSS | JavaScript | Socket Programming</span>
+    </div>
+
+    <div class="project-card">
+        <h3>DriveSafe – ELD & Fleet Management System</h3>
+        <p>
+            Developed a driver safety platform featuring drowsiness detection, 
+            GPS tracking, and predictive maintenance. Integrated Twilio API 
+            for real-time alerts and enforced duty-time compliance logic.
+        </p>
+        <span class="tech">HTML | CSS | JavaScript | MySQL | TensorFlow | Twilio API</span>
+    </div>
+
+    <div class="project-card">
+        <h3>Hunger No More – Dynamic NGO Website</h3>
+        <p>
+            Created a responsive NGO platform with donation modules, blog system, 
+            volunteer tracking, Stripe payment integration, Google Maps API, 
+            and AI-based donation suggestions.
+        </p>
+        <span class="tech">HTML | CSS | JavaScript | MySQL | Stripe API | Google Maps API</span>
+    </div>
+
+    <div class="project-card">
+        <h3>Face Detection & Recognition System</h3>
+        <p>
+            Designed a machine learning-based authentication system using facial 
+            recognition. Implemented real-time detection, face registration, 
+            and secure access control with interactive GUI.
+        </p>
+        <span class="tech">Python | OpenCV | Machine Learning</span>
+    </div>
+
+    <div class="project-card">
+        <h3>College Student Management Website</h3>
+        <p>
+            Built a responsive front-end portal displaying attendance and marks. 
+            Implemented login and signup functionality with complete database connectivity.
+        </p>
+        <span class="tech">HTML | CSS | MySQL</span>
+    </div>
+
+</section>
+
+
+    <!-- CONTACT -->
+    <section class="contact reveal">
+        <h2>Contact</h2>
+        <p>Email: rj.riya1709@gmail.com</p>
+        <p>Location: Indore, Madhya Pradesh</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Riya Jain</p>
+    </footer>
+
+<script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    window.addEventListener("scroll", () => {
+        reveals.forEach((element) => {
+            const windowHeight = window.innerHeight;
+            const revealTop = element.getBoundingClientRect().top;
+            const revealPoint = 100;
+
+            if (revealTop < windowHeight - revealPoint) {
+                element.classList.add("active");
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
